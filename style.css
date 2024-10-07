@@ -3,8 +3,42 @@
     --text-color:#DBE4EF;
     --cor-catao-frente:#144480;
     --cor-cartao-verso:#00F4BF;
+
+}
+*{
+    margin: 0%;
+    padding: 0%;
 }
 body{
 
-font-family:' bai jamjuree;'
+font-family:' bai jamjuree';
+background-color: bisque;
+
+}
+
+footer{
+    
+    background-color: black;
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: 2rem;
+    
+  
+    
+
+}
+footer{
+    text-align: center;
+    font-size: 0.8rem;
+    margin:0.5rem ;
+}
+#container{
+    display: flex;
+
+}
+.cartao{
+    margin: 1rem;
+    background-color: green;
+    height: 20rem;
 }
