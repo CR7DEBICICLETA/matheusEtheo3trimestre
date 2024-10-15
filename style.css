@@ -11,8 +11,8 @@
 }
 body{
 
-font-family:' bai jamjuree';
-background-color: bisque;
+font-family:'bai jamjuree';
+background:url(img/bg-desktop.webp);
 
 }
 
@@ -28,7 +28,7 @@ footer{
     
 
 }
-footer{
+footer p{
     text-align: center;
     font-size: 0.8rem;
     margin:0.5rem ;
@@ -39,16 +39,39 @@ footer{
 }
 .cartao{
     margin: 1rem;
-    background-color: green;
+    background-color: red;
     height: 20rem;
 }
 .cartao-conteudo{
-    background-color:var(--text-color);
+    text-align: center;
+    height: 100%;
+    background-color: var(--cor-catao-frente);
+    transform-style: preserve-3d;
+    transition: transform 300ms ease-in-out;
+}
+.cartao-conteudo h3{
+    background-color:var(--text-color)s;
     text-align: left;
     position: absolute;
     font-size: 1vw;
     margin: page ;
     padding: 0.5rem;
     border-radius: 0.6rem;
-    border-color: solid 1px;
+    border: solid 1px var(--text-color);
+}
+p{
+    color: rgb(red, green, blue);
+}
+.cartao-conteudo-pergunta p{
+    font-weight: 500;
+}
+.cartao-conteudo-resposta p{
+color: var(--cor-cartao-verso);
+font-weight: 700;
+}
+.cartao-conteudo-pergunta, .cartao-conteudo-resposta{
+    margin: 1rem;
+}
+.cartao:hover  .cartao-conteudo{
+    transform: rotateY(180deg);
 }
